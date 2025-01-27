@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Medicare Clinic Patient Portal</title>
+	<link rel="icon" type="image/png" href="medicare.png">
+
+<style>
+	body {margin: 0;padding: 0;font-family: Arial, sans-serif;display: flex;height: 100vh;}
+	.left {flex: 1;display: flex;justify-content: center;align-items: center;padding: 20px;background-color: #f9f9ff;}
+	.left .form-container {width: 100%;max-width: 500px;display: flex;flex-direction: column;align-items: center; justify-content: center;}
+	.left h1 {font-size: 2rem;margin-bottom: 10px;color: #333;}
+	.left p {color: #666;margin-bottom: 20px;}
+
+	.form-group {margin-bottom: 20px;width: 100%;justify-content: center;align-items: center;}
+	.form-group label {display: block;margin-bottom: 5px;font-size: 0.9rem;justify-content: center;align-items: center;}
+	.form-group input {width: 95%;padding: 10px;font-size: 1rem;border: 1px solid #ddd;border-radius: 5px;outline: none;transition: border 0.3s;}
+	.forgot-password {color: black;font-size: 0.9rem;display: block;text-align: right;margin-top: -15px;margin-bottom: 10px;}
+	.form-group input:focus {border-color: #78B3CE;}
+
+	.login-btn {width: 500px;padding: 12px;font-size: 1rem;background-color: #2F3645;color: #fff;border: none;border-radius: 5px;cursor: pointer;transition: 	background-color 0.3s;}
+	.login-btn:hover {background-color: #78B3CE;}
+
+	.footer {text-align: center;margin-top: auto;}
+	.footer a {text-decoration: none;color: #2F3645;font-weight: bold;transition: color 0.3s;}
+	.footer a:hover {color: #78B3CE;}
+
+	.right {flex: 1;background: url('bg.jpg') no-repeat center center;background-size: cover;}
+	.help-button {position: absolute;bottom: 20px;right: 20px;background: white;color: #00274d;padding: 10px 15px;border: none;border-radius: 5px;font-size: 	0.9rem;font-weight: bold;cursor: pointer;transition: background 0.3s ease;}
+	.help-button:hover {background: #B5C0D0;color: #00274d;}
+	.help-message {display: none;position: absolute;bottom: 70px;right: 20px;background: #fff;border: 1px solid #ccc;border-radius: 5px;padding: 10px;box-shadow: 0 	5px 15px rgba(0, 0, 0, 0.2);font-size: 0.9rem;color: #333;width: 300px;}
+	.help-button:hover + .help-message {display: block;}
+  </style>
+</head>
+<body>
+  <div class="left">
+    <div class="form-container">
+        <center><img src="logomc.png" style="width: 70%;" alt="Medicare Clinic Logo"></center>
+      <center><h1>Welcome to Patient Portal!</h1></center>
+      <p style="margin-left: 50px; color: black;">Log in to your account</p>
+    <form action="dashboard.html" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="form-group">
+            <a href="#" class="forgot-password">Forgot your password?</a>
+	</div>
+        <center><button type="submit" class="login-btn">Log In</button></center>
+      </form>
+      <div class="footer">
+        <center><p>Don't have an account? <a href="register.html"><u>Sign Up</u></a></p></center>
+        <center><p style="color: #555; font-size: 10px;">© 2025 Medicare Clinic.</p></center>
+      </div>
+    </div>
+  </div>
+  <div class="right"></div>
+    <button class="help-button">Help</button>
+    <div class="help-message">If you need assistance, please contact the IT help desk at helpdesk@medicareclinic.my or call +603-1234-5678.</div>
+</body>
+</html>
