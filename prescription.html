@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="medicare.png">
+<link rel="stylesheet" href="stylo.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prescription</title>
+
+	<style>
+		.content { margin-left: 250px; padding: 20px; }
+        	.container { max-width: 1200px; margin: 20px auto; padding: 20px; background-color: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 		0.1); }
+		.title { font-size: 1.5rem; margin-bottom: 20px; color: #34495e }
+		table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+		table th, table td { padding: 10px; text-align: left; border-bottom: 1px solid #ddd; }
+		table th { background-color: #78B3CE; color: white; }
+		table tr:hover { background-color: #f1f1f1; }
+	</style>
+</head>
+
+<body>
+
+<div class="header">
+	<div class="logo">
+	<img src="logomc.png" alt="PatientPortal Logo">
+	<h1>Patient Portal</h1>
+	</div>
+	<div class="user-section">
+	<div class="user-info">
+	<a href="logout.html"><img src="logout.png" alt="Logout Icon" ></a>
+	</div>
+	</div>
+</div>
+
+<div class="sidebar">
+	<div class="logo">
+	<img src="user.png" alt="User Avatar">
+	<span>Welcome!</span>
+	<b><sub>IMRAN HAZWAN BIN AZZAM</sub></b>
+	<br><i><sub>Patient</sub></i>
+	</div>
+	<ul class="menu">
+		<li><a href="index.html" target="_blank">DASHBOARD</a></li>
+		<li><a href="profile.html" target="_blank">PATIENT PROFILE</a></li>
+		<li class="dropdown">
+		<a href="upcoming appt.html" target="_blank">APPOINTMENT <i class="fas fa-caret-down"></i></a>
+	<ul class="dropdown-content">
+		<li><a href="book appt.html" target="_blank">Book An Appointment</a></li>
+		<li><a href="history.html" target="_blank">Appointment History</a></li>
+	</ul>
+		</li>
+	<li><a href="prescription.html" target="_blank">PRESCRIPTIONS</a></li>
+	<li><a href="doctors.html" target="_blank">DOCTORS</a></li>
+	<li><a href="faq.html" target="_blank">FAQ</a></li>
+	</ul>
+</div>
+</div>
+
+<div class="content">
+
+<div class="container">
+	<div class="title">Prescription Details</div>
+	<table>
+	<thead>
+		<tr>
+			<th>Prescription ID</th>
+			<th>Medicine Name</th>
+			<th>Dosage</th>
+			<th>Frequency</th>
+			<th>Doctor's Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>RX00123</td>
+			<td>Paracetamol</td>
+			<td>500mg</td>
+			<td>Twice a day</td>
+			<td>Dr. Sarah Tan</td>
+		</tr>
+		<tr>
+			<td>RX00124</td>
+			<td>Amoxicillin</td>
+			<td>250mg</td>
+			<td>Three times a day</td>
+			<td>Dr. Steve Wong</td>
+		</tr>
+		<tr>
+			<td>RX00125</td>
+			<td>Metformin</td>
+			<td>850mg</td>
+			<td>Once a day</td>
+                    	<td>Dr. James lee</td>
+		</tr>
+		<tr>
+			<td>RX00126</td>
+			<td>Paracetamol</td>
+			<td>500mg</td>
+			<td>Twice a day</td>
+                    	<td>Dr. Sarah Tan</td>
+		</tr>
+	</tbody>
+	</table>
+</div>
+</div>
+
+
+<footer>
+	<div class="footer-container">
+
+		<div class="footer-section contact-info">
+			<h3>Contact Us</h3>
+			<p>Medicare Clinic, 17,</p>
+			<p>Jalan Adda 7, Adda Heights,</p>
+			<p>81100 Johor Bahru, Johor.</p>
+		</div>
+
+		<div class="footer-section social-icons">
+			<a href="https://www.youtube.com/@kpjhealthcaretv" target="_blank" class="social-link">
+				<i class="fab fa-whatsapp"></i>
+			</a>
+			<a href="mailto:medicareclinic@mail.my" target="_blank" class="social-link">
+				<i class="far fa-envelope"></i>
+			</a>
+			<a href="https://www.instagram.com/kpjhealthcareberhadofficial/" target="_blank" class="social-link">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="https://www.facebook.com/KPJHealthTourismMalaysia?mibextid=ZbWKwL" target="_blank" class="social-link">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+		</div>
+
+		<div class="footer-section operation-hour">
+			<h3>Operation Hour</h3>
+			<p>Everyday:</p>
+			<p>9.00 AM - 10.00 PM</p>
+		</div>
+	</div>
+
+	<div class="copyright">
+		&copy; 2025 Medicare Clinic. All rights reserved.
+	</div>
+
+</body>
+</html>
